@@ -9,7 +9,7 @@ node
 
 	stage("print")
 	{
-		echo "running check"
-		echo "param ${HELLO}"
+		echo 'running check'
+		echo 'param ${HELLO}'
 	}
 }
