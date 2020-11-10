@@ -2,7 +2,7 @@
 
 properties([
 		parameters([
-				list(description: 'Environment for which configMap is to be created', name: 'HELLO')
+				List(description: 'Environment for which configMap is to be created', name: 'HELLO')
 		])
 ])
 
