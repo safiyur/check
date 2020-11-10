@@ -11,7 +11,7 @@ node
 	{
 		String par = "param string"
 		echo 'running check'
-		echo 'param ${HELLO}'
-		echo '${par}'
+		echo "param ${HELLO}"
+		echo "${par}"
 	}
 }
