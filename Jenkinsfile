@@ -1,11 +1,17 @@
 #!/usr/bin/env groovy
 
+properties([
+		parameters([
+				string(defaultValue: 'dev', description: 'Environment for which configMap is to be created', name: 'HELLO')
+		])
+])
+
+
+//def param = params.HELLO
+println "Incoming Pipeline Library Branch Parameter: ${params.HELLO}"
+
 node
 {
-
-	parameters {
-		string(defaultValue: "123", description: 'K', name: 'HELLO')
-	}
 
 	stage("print")
 	{
@@ -13,5 +19,6 @@ node
 		echo 'running check'
 		//echo "param ${HELLO}"
 		echo "${par}"
+		//echo "${param}"
 	}
 }
