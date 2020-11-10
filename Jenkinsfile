@@ -4,12 +4,14 @@ node
 {
 
 	parameters {
-		string(defaultValue: "", description: 'K', name: 'HELLO')
+		string(defaultValue: "123", description: 'K', name: 'HELLO')
 	}
 
 	stage("print")
 	{
+		String par = "param string"
 		echo 'running check'
 		echo 'param ${HELLO}'
+		echo '${par}'
 	}
 }
