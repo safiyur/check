@@ -19,6 +19,8 @@ node
 		echo 'running check'
 		//echo "param ${HELLO}"
 		echo "${par}"
+		String param = params.HELLO
+		println("param:"+param)
 		//echo "${param}"
 	}
 }
